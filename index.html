@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Portfolio - Fikry Ardi Fatma</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-color-4 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex justify-between items-center py-6 md:justify-between md:space-x-10">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="#">
+                        <img class="h-10 w-auto sm:h-12" src="assets/img/nav-icon.png" alt="">
+                    </a>
+                </div>
+                <div class="-mr-2 -my-2 md:hidden" id="burger-menu">
+                    <button type="button"
+                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                        aria-expanded="false">
+                        <span class="sr-only">Open menu</span>
+                        <!-- Heroicon name: outline/menu -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="hidden md:flex md:space-x-16 ">
+                    <a href="#" class="text-base font-medium text-color-blue hover:text-blue-500">
+                        Home
+                    </a>
+                    <a href="#" class="text-base font-medium text-color-blue hover:text-blue-500">
+                        Projek
+                    </a>
+                    <a href="#" class="text-base font-medium text-color-blue hover:text-blue-500">
+                        About
+                    </a>
+                    <a href="#" class="text-base font-medium text-color-blue hover:text-blue-500">
+                        Contact me
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden md:hidden"
+            id="navbar-hidden-menu">
+            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                <div class="pt-5 pb-6 px-5">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <img class="h-10 w-auto" src="assets/img/nav-icon.png" alt="Workflow">
+                        </div>
+                        <div class="-mr-2" id="close-button">
+                            <button type="button"
+                                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                <span class="sr-only">Close menu</span>
+                                <!-- Heroicon name: outline/x -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <nav class="grid gap-y-8">
+                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
+                                    Home
+                                </span>
+                            </a>
+
+                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
+                                    Project
+                                </span>
+                            </a>
+
+                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
+                                    About
+                                </span>
+                            </a>
+
+                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
+                                    Contact Me
+                                </span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section CTA -->
+    <section
+        class="relative max-w-7xl mx-auto my-10 px-8 sm:px-6 grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-16 md:mx-auto">
+        <div class="flex flex-col justify-center">
+            <img src="assets/img/cta-photo.png" alt="">
+        </div>
+
+        <div class="flex flex-col justify-center ">
+            <h1 class="font-bold text-3xl text-color-blue leading-normal lg:text-5xl lg:leading-normal">Saya Fikry Ardi
+                Dan saya menyukai
+            </h1>
+            <h1 class="font-bold text-3xl text-color-purple leading-normal mb-2 lg:text-5xl lg:leading-normal">UI/UX
+                Design</h1>
+            <p class="text-gray-400 text-lg leading-8">Saya seorang mahasiswa S1 Sistem Informasi UPN Veteran
+                Jakarta,
+                saya sangat
+                tertarik
+                dalam dunia UI
+                Design dan tetap terus mencari pengalaman, pengetahuan dalam dunia UI Design dan saya mampu bekerja
+                sama
+                dengan tim dan profesional, bertanggung jawab, kreatif dan inovatif</p>
+
+            <a href=""
+                class="btn-gradient-1 my-4 py-4 px-8 text-white text-center text-lg font-semibold rounded-2xl shadow-md sm:block sm:w-56">
+                Download CV</a>
+
+        </div>
+    </section>
+
+    <!-- Image Pattern -->
+    <img class="absolute top-100 w-screen" src="assets/img/work-pattern.png" class="" alt="">
+
+    <!-- Section Experience -->
+    <section class="relative max-w-7xl mx-auto my-8 px-8 md:my-20">
+        <h1 class="font-bold text-3xl text-color-2 leading-normal lg:text-5xl lg:leading-normal text-center mb-16">
+            Pengalaman Kerja
+        </h1>
+
+        <div class=" grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-14 md:mx-auto">
+            <div class="rounded-3xl drop-shadow-lg bg-white grid grid-cols-3 py-3">
+                <img class="w-28 ml-2 my-auto col-span-1" src="assets/img/work-logo-1.png" alt="">
+                <div class="flex flex-col justify-center col-span-2 px-3 py-2">
+                    <h3 class="text-color-blue text-lg  font-bold">UI/UX Designer</h3>
+                    <p class="text-color-4 text-base font-semibold">Kampus Indonesia</p>
+                    <p class="text-color-5">Apr 2021 - Jul 2021</p>
+                </div>
+            </div>
+            <div class="rounded-3xl drop-shadow-lg bg-white grid grid-cols-3">
+                <img class="w-28 ml-2 my-auto col-span-1" src="assets/img/work-logo-3.png" alt="">
+                <div class="flex flex-col justify-center col-span-2 px-3 py-2">
+                    <h3 class="text-color-blue text-lg  font-bold">Front End Developer</h3>
+                    <p class="text-color-4 text-base font-semibold">Sekretariat Jenderal DPD RI</p>
+                    <p class="text-color-5">May 2021 - Aug 2021</p>
+                </div>
+            </div>
+            <div class="rounded-3xl drop-shadow-lg bg-white grid grid-cols-3">
+                <img class="w-28 ml-2 my-auto col-span-1" src="assets/img/work-logo-2.png" alt="">
+                <div class="flex flex-col justify-center col-span-2 px-3 py-2">
+                    <h3 class="text-color-blue text-lg font-bold">UI Designer</h3>
+                    <p class="text-color-4 text-base font-semibold">Telkom Indonesia</p>
+                    <p class="text-color-5">Sep 2021 - Sekarang</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative max-w-7xl mx-auto my-8 px-8 md:my-20">
+        <div class="">
+            <img class="inline-block mr-4" src="assets/img/instagram-icon.png" alt="">
+            <h1
+                class="align-middle font-bold text-3xl text-color-2 leading-normal lg:text-5xl lg:leading-normal inline-block">
+                Eksplorasi
+                Design</h1>
+        </div>
+
+
+    </section>
+</body>
+
+<!-- Custom Javascript -->
+<script src="assets/js/script.js"></script>
+
+</html>

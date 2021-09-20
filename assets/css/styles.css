@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #F8F9FA;
+}
+
+.brand-color-1 {
+    background: #F72585;
+}
+
+.brand-color-2 {
+    background: #7209B7;
+}
+
+.brand-color-3 {
+    background: #3A0CA3;
+}
+
+.brand-color-4 {
+    background: #4361EE;
+}
+
+.brand-color-5 {
+    background: #4CC9F0;
+}
+
+.bg-color-1 {
+    background: #CED4DA;
+}
+
+.bg-color-2 {
+    background: #DEE2E6;
+}
+
+.bg-color-3 {
+    background: #E9ECEF;
+}
+
+.bg-color-4 {
+    background: #F8F9FA;
+}
+
+.text-color-1 {
+    color: #212529;
+}
+
+.text-color-2 {
+    color: #343A40;
+}
+
+.text-color-3 {
+    color: #495057;
+}
+
+.text-color-4 {
+    color: #6C757D;
+}
+
+.text-color-5 {
+    color: #ADB5BD;
+}
+
+.text-color-blue {
+    color: #4361EE;
+}
+
+.text-color-purple {
+    color: #7209B7;
+}
+
+.btn-gradient-1 {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    display: inline;
+    background: linear-gradient(90deg, #F72585 -46.61%, #4361EE 141.04%);
+}
+
+:hover.btn-gradient-1 {
+    background: linear-gradient(90deg, #F72585 -46.61%, #4361EE 282.04%);
+}
+
+/* Utilities Extend Class */
+.top-100 {
+    top: 500px;
+}
