@@ -20,7 +20,7 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="sticky top-0 bg-color-4 z-50 transition-all" id="nav">
+    <nav class="sticky top-0 bg-color-4 z-30 transition-all" id="nav">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="flex justify-between items-center py-6 md:justify-between md:space-x-10">
                 <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -45,15 +45,16 @@
                     <a href="index.html" class="text-lg font-medium text-color-blue hover:text-blue-500">
                         Home
                     </a>
-                    <a href="projek.html" class="text-lg font-medium text-color-blue hover:text-blue-500">
+                    <a href="index.html#project" class="text-lg font-medium text-color-blue hover:text-blue-500">
                         Projek
                     </a>
                     <a href="about.html" class="text-lg font-medium text-color-blue hover:text-blue-500">
                         About
                     </a>
-                    <a href="#contact" class="text-lg font-medium text-color-blue hover:text-blue-500">
+                    <p class="text-lg font-medium text-color-blue hover:text-blue-500 cursor-pointer"
+                        id="btnModalContact">
                         Contact me
-                    </a>
+                    </p>
                 </nav>
             </div>
         </div>
@@ -87,7 +88,7 @@
                                 </span>
                             </a>
 
-                            <a href="projek.html" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <a href="index.html#project" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                                 <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
                                     Project
                                 </span>
@@ -99,11 +100,12 @@
                                 </span>
                             </a>
 
-                            <a href="#contact" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <p class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 cursor-pointer"
+                                id="btnModalContact">
                                 <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
                                     Contact Me
                                 </span>
-                            </a>
+                            </p>
                         </nav>
                     </div>
                 </div>
