@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="assets/css/tailwind.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-
     <title>Portfolio - Fikry Ardi Fatma</title>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="sticky top-0 bg-color-4 z-50 transition-all" id="nav">
+    <nav class="sticky top-0 bg-color-4 z-30 transition-all" id="nav">
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="flex justify-between items-center py-6 md:justify-between md:space-x-10">
                 <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -51,7 +51,7 @@
                     <a href="about.html" class="text-lg font-medium text-color-blue hover:text-blue-500">
                         About
                     </a>
-                    <a href="contact.html" class="text-lg font-medium text-color-blue hover:text-blue-500">
+                    <a href="#contact" class="text-lg font-medium text-color-blue hover:text-blue-500">
                         Contact me
                     </a>
                 </nav>
@@ -81,25 +81,25 @@
                     </div>
                     <div class="mt-6">
                         <nav class="grid gap-y-8">
-                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <a href="index.html" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                                 <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
                                     Home
                                 </span>
                             </a>
 
-                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <a href="projek.html" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                                 <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
                                     Project
                                 </span>
                             </a>
 
-                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <a href="about.html" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                                 <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
                                     About
                                 </span>
                             </a>
 
-                            <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                            <a href="#contact" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                                 <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
                                     Contact Me
                                 </span>
@@ -113,18 +113,19 @@
     <!-- End Navbar -->
 
     <!-- Section CTA -->
-    <section class="relative my-10 " id="cta">
+    <section class="relative my-10" id="cta">
+        <!-- Image Pattern Mobile -->
+        <img class="absolute w-screen sm:hidden" src="assets/img/pattern/pattern-mobile.png" class="" alt="">
         <div class="mx-auto px-8 sm:px-6 grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-16 sm:mx-auto max-w-7xl">
-            <div class="flex flex-col justify-center">
+            <div class="flex flex-col row-start-2 justify-center sm:row-start-1 sm:col-start-1">
                 <h1 class="font-bold text-3xl text-color-blue leading-normal lg:text-6xl lg:leading-normal">Halo, Saya
                     Fikry
                 </h1>
                 <h1 class="font-bold text-3xl text-color-purple leading-normal mb-4 lg:text-6xl lg:leading-normal">UI/UX
-                    Design</h1>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2">
+                    Designer</h1>
+                <div class="grid grid-cols-1 lg:grid-cols-2">
                     <a href="#"
-                        class="btn-gradient-1 my-4 py-4 px-8 text-white text-center text-lg font-semibold rounded-3xl shadow-md sm:block sm:w-60 ">
+                        class="btn-gradient-1 border-2 my-2 sm:my-4 py-3 sm:py-4 px-8 text-white text-center text-lg font-semibold rounded-xl sm:rounded-3xl shadow-md sm:block sm:w-60 ">
                         <div class="flex justify-center">
                             <i class="material-icons-outlined mr-2 pt-0.5">
                                 email
@@ -133,7 +134,7 @@
                         </div>
                     </a>
                     <a href="#"
-                        class="btn-outline-pink border-2 my-4 py-4 px-8 text-white text-center text-lg font-semibold rounded-3xl shadow-md sm:block sm:w-60 ">
+                        class="btn-outline-pink border-2 my-2 sm:my-4 py-3 sm:py-4 px-8 text-white text-center text-lg font-semibold rounded-xl sm:rounded-3xl shadow-md sm:block sm:w-60 ">
                         <div class="flex justify-center">
                             <i class="material-icons-outlined mr-2 pt-0.5">
                                 file_download
@@ -145,117 +146,269 @@
 
             </div>
 
-            <div class="h-200">
+            <div class="h-72 h-200 row-start-1 sm:row-start-1 sm:col-start-2">
                 <div class="relative ">
-                    <img src="assets/img/animation-cta/1.png" class="absolute ">
-                    <img src="assets/img/animation-cta/2.png" class="absolute top-96 right-52 ">
-                    <img src="assets/img/animation-cta/3.png" class="absolute right-8 top-40 ">
-                    <img src="assets/img/animation-cta/4.png" class="absolute top-0.5 -left-4 z-10 cta-1">
-                    <img src="assets/img/animation-cta/5.png" class="absolute top-24 left-20 z-20  cta-2">
-                    <img src="assets/img/animation-cta/6.png" class="absolute -top-36 -right-4 z-10 cta-1">
-                    <img src="assets/img/animation-cta/7.png" class="absolute top-14 right-8 ">
+                    <img src="assets/img/animation-cta/1.png"
+                        class="absolute transform scale-50 -left-12 -top-16 sm:-top-4 sm:-left-24 lg:scale-100 lg:left-0 lg:top-8 slideFast">
+                    <img src="assets/img/animation-cta/2.png"
+                        class="absolute transform scale-50 right-24 top-44 sm:top-60 sm:right-36 lg:scale-100 lg:top-96 lg:right-52 slideFast">
+                    <img src="assets/img/animation-cta/3.png"
+                        class="absolute transform scale-50 -right-10 top-4 sm:top-36 lg:scale-100 lg:right-4 lg:top-44 slideFast">
+                    <img src="assets/img/animation-cta/4.png"
+                        class="absolute transform scale-60 -left-8 -top-24 sm:top-0 sm:-left-20 sm:scale-75 lg:scale-100 lg:top-14 lg:left-16 z-10 slideFast">
+                    <img src="assets/img/animation-cta/5.png"
+                        class="absolute transform scale-75 top-4 sm:scale-75 sm:top-20 sm:-left-4 lg:top-28 lg:scale-100 lg:left-20 z-20 slideSlow">
+                    <img src="assets/img/animation-cta/6.png"
+                        class="absolute transform scale-60 -top-32 -right-6 sm:-top-8 sm:right-4 sm:scale-75 lg:scale-100 lg:top-2 lg:right-16 z-10 slideFast">
+                    <img src="assets/img/animation-cta/7.png"
+                        class="absolute transform scale-50 -top-8 -right-8 lg:scale-100 lg:top-6 lg:right-8 slideFast">
                 </div>
             </div>
         </div>
-
     </section>
     <!-- End Section CTA -->
 
-    <!-- Section Experience -->
-    <section class=" relative py-8 md:my-20 " id=" experience">
+    <!-- Section Project -->
+    <section class="bg-white relative py-4 md:mt-20 " id=" experience">
         <!-- Image Pattern -->
-        <img class="absolute -top-4 w-screen" src="assets/img/pattern/work-pattern.png" class="" alt="">
-        <div class=" max-w-7xl mx-auto my-8 px-8 md:my-20">
+        <img class="absolute sm:-top-60 sm:w-screen" src="assets/img/pattern/work-pattern.png" class="" alt="">
+        <div class=" relative max-w-7xl mx-auto my-8 px-8 md:my-20">
             <div class="mb-10">
-                <img class="inline-block mr-2 w-12 sm:w-20 sm:mr-4" src="assets/img/icon/project-icon.png" alt="">
+                <img class="inline-block mr-2 w-12 sm:w-20 sm:mr-8" src="assets/img/icon/project-icon.png" alt="">
                 <h1
                     class="align-middle font-extrabold text-2xl text-color-2 leading-normal lg:text-5xl lg:leading-normal inline-block">
                     Projek Saya</h1>
             </div>
 
-            <div class=" grid grid-cols-1 gap-10 lg:grid-cols-3 lg:gap-14 lg:mx-auto">
-                <div class="rounded-3xl drop-shadow-lg bg-white grid grid-cols-3 py-3">
-                    <img class="w-28 mx-auto lg:ml-2 my-auto col-span-1" src="assets/img/work-logo-1.png" alt="">
-                    <div class="flex flex-col justify-center col-span-2 px-3 py-2">
-                        <h3 class="text-color-blue text-lg  font-bold">UI/UX Designer</h3>
-                        <p class="text-color-4 text-base font-semibold">Kampus Indonesia</p>
-                        <p class="text-color-5">Apr 2021 - Jul 2021</p>
+            <div class="grid grid-cols-1 gap-24">
+                <div class="grid grid-cols-1 sm:grid-cols-2 shadow-xl sm:gap-24 rounded-2xl">
+                    <img class="my-auto" src="assets/img/project-home/1.png" alt="">
+                    <div class="my-auto px-6 sm:pr-8 lg:pr-24 sm:px-0">
+                        <h3 class="text-xl sm:text-4xl font-semibold my-4">JDIH</h3>
+                        <p class="text-base sm:text-xl text-gray-400 my-4 leading-loose sm:leading-loose">JDIH ialah
+                            sebuah website
+                            tentang
+                            dokumentasi hukum yang
+                            dimiliki oleh DPD
+                            RI</p>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 sm:my-4 mb-4">
+                            <a href="#"
+                                class="btn-gradient-1 border-2 my-4 py-2.5 px-4 text-white text-center text-md sm:text-lg font-light rounded-lg shadow-sm mx-auto block w-52 sm:block sm:w-60 ">
+                                <div class="flex justify-center">
+                                    <i class="material-icons-outlined mr-4 sm:pt-0.5">
+                                        search
+                                    </i>
+                                    <span class="font-medium">Lihat Studi Kasus</span>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="my-4 py-2.5 px-4 text-center text-md sm:text-lg font-light rounded-lg block w-52 mx-auto sm:block sm:w-60 ">
+                                <div class="flex justify-center text-gray-500 hover:text-gray-700">
+                                    <i class="material-icons-outlined mr-4 sm:pt-0.5  ">
+                                        link
+                                    </i>
+                                    <span class="font-medium">Lihat Detail</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="rounded-3xl drop-shadow-lg bg-white grid grid-cols-3">
-                    <img class="w-28 mx-auto lg:ml-2 my-auto col-span-1" src="assets/img/work-logo-3.png" alt="">
-                    <div class="flex flex-col justify-center col-span-2 px-3 py-2">
-                        <h3 class="text-color-blue text-lg  font-bold">Front End Developer</h3>
-                        <p class="text-color-4 text-base font-semibold">Sekretariat Jenderal DPD RI</p>
-                        <p class="text-color-5">May 2021 - Aug 2021</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 shadow-xl sm:gap-24 rounded-2xl">
+                    <div class="my-auto px-6 row-start-2 sm:row-start-1 sm:pl-12 lg:pl-24 sm:px-0">
+                        <h3 class="text-xl sm:text-4xl font-semibold my-4">StudentHunt</h3>
+                        <p class="text-base sm:text-xl text-gray-400 my-4 leading-loose sm:leading-loose">StudentHunt
+                            ialah website untuk para mahasiswa atau siswa dalam mencari pengalaman mangang, kerja
+                            praktik.</p>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 sm:my-4 mb-4">
+                            <a href="#"
+                                class="btn-gradient-2 border-2 my-4 py-2.5 px-4 text-white text-center text-md sm:text-lg font-light rounded-lg shadow-sm mx-auto block w-52 sm:block sm:w-60 ">
+                                <div class="flex justify-center">
+                                    <i class="material-icons-outlined mr-4 sm:pt-0.5">
+                                        search
+                                    </i>
+                                    <span class="font-medium">Lihat Studi Kasus</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
+                    <img class="my-auto row-start-1 sm:row-start-1" src="assets/img/project-home/2.png" alt="">
                 </div>
-                <div class="rounded-3xl drop-shadow-lg bg-white grid grid-cols-3">
-                    <img class="w-28 mx-auto lg:ml-2 my-auto col-span-1" src="assets/img/work-logo-2.png" alt="">
-                    <div class="flex flex-col justify-center col-span-2 px-3 py-2">
-                        <h3 class="text-color-blue text-lg font-bold">UI Designer</h3>
-                        <p class="text-color-4 text-base font-semibold">Telkom Indonesia</p>
-                        <p class="text-color-5">Sep 2021 - Sekarang</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 shadow-xl sm:gap-24 rounded-2xl">
+                    <img class="my-auto" src="assets/img/project-home/3.png" alt="">
+                    <div class="my-auto px-6 sm:pr-8 lg:pr-24 sm:px-0">
+                        <h3 class="text-xl sm:text-4xl font-semibold my-4">Jatra</h3>
+                        <p class="text-base sm:text-xl text-gray-400 my-4 leading-loose sm:leading-loose">Jakarta
+                            Tracking, aplikasi
+                            untuk membantu
+                            penanganan kesehatan dalam mengetahui pendataan kunjungan</p>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 sm:my-4 mb-4">
+                            <a href="#"
+                                class="btn-gradient-3 border-2 my-4 py-2.5 px-4 text-white text-center text-md sm:text-lg font-light rounded-lg shadow-sm mx-auto block w-52 sm:block sm:w-60 ">
+                                <div class="flex justify-center">
+                                    <i class="material-icons-outlined mr-4 sm:pt-0.5">
+                                        search
+                                    </i>
+                                    <span class="font-medium">Lihat Studi Kasus</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Section Experience -->
-
-    <!-- Section Explorasi Design -->
-    <section class="relative max-w-7xl mx-auto mt-8 mb-20 px-8 md:my-20" id="exploration">
-        <div class="mb-10">
-            <img class="inline-block mr-2 w-12 sm:w-20 sm:mr-4" src="assets/img/icon/instagram-icon.png" alt="">
-            <h1
-                class="align-middle font-extrabold text-2xl text-color-2 leading-normal lg:text-5xl lg:leading-normal inline-block">
-                Eksplorasi
-                Design</h1>
-        </div>
-
-        <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 sm:gap-14 sm:mx-auto">
-            <img src="assets/img/explore-design-1.png" alt="">
-            <img src="assets/img/explore-design-2.png" alt="">
-            <img src="assets/img/explore-design-3.png" alt="">
-            <img src="assets/img/explore-design-4.png" alt="">
-            <img src="assets/img/explore-design-5.png" alt="">
-            <img src="assets/img/explore-design-6.png" alt="">
-            <img src="assets/img/explore-design-7.png" alt="">
-            <img src="assets/img/explore-design-8.png" alt="">
-        </div>
-
-        <div class="mt-16 sm:mt-0">
-            <a href="https://www.instagram.com/fikryard.ui/"
-                class="btn-outline-pink block border-2 mb-4 mt-16 sm:mt-12 py-4 px-8 mx-auto text-center text-lg font-semibold rounded-2xl shadow-md sm:block sm:w-60">
-                <i class="fab fa-lg fa-instagram"></i> Lihat Lainnya</a>
-        </div>
-
-    </section>
-    <!-- End Section Explorasi Design -->
-
+    <!-- End Section Project -->
 
     <!-- Section Contact -->
-    <section id="contact" class="relative bg-white py-8 md:mt-20">
-        <!-- Image Pattern -->
-        <img class="absolute -top-24" src="assets/img/pattern/circle-pattern.png" class="" alt="">
+    <section id="contact" class="relative bg-gradient-1 py-8">
         <div class="max-w-7xl mx-auto px-8 py-8 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-2">
-            <h1 class="text-color-blue font-bold text-3xl text-color-2 leading-normal lg:text-5xl lg:leading-normal">
+            <h1 class="text-white font-bold text-3xl leading-normal lg:text-5xl lg:leading-normal">
                 Tertarik bekerja sama dengan saya?</h1>
             <div class="sm:flex sm:flex-col sm:items-end sm:justify-center">
-                <a href=""
-                    class="btn-pink block my-4 py-4 px-8 text-white text-center text-lg font-semibold rounded-2xl shadow-md  sm:block sm:w-60">
+                <button id="btnModalContact"
+                    class="btn-pink my-4 py-4 px-8 text-white text-center text-lg font-semibold rounded-2xl shadow-md w-full sm:block sm:w-60">
                     <div class="flex justify-center">
                         <i class="material-icons-outlined mr-2 pt-0.5">
                             email
                         </i>
                         <span> Kontak Saya</span>
                     </div>
-                </a>
+                </button>
             </div>
-
         </div>
     </section>
     <!-- End Section Contact -->
+
+    <!-- Section Wcm -->
+    <section class="bg-color-4 relative py-4 " id="wcm">
+        <div class="max-w-7xl mx-auto my-8 px-8 md:my-20">
+            <div class="grid grid-cols-4 mb-10 sm:inline-block">
+                <img class="inline-block mr-2 w-12 sm:w-20 sm:mr-8 col-span-1 my-auto"
+                    src="assets/img/icon/wcm-icon.png" alt="">
+                <h1
+                    class="align-middle font-extrabold text-2xl text-color-2 leading-normal lg:text-5xl lg:leading-normal inline-block col-span-3 ">
+                    Mengapa Memilih Saya?</h1>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+                <div class="grid grid-row-3 px-10 py-16 bg-white shadow-sm text-center rounded-3xl hover:shadow-2xl">
+                    <img class="mx-auto align-middle mt-4 mb-8" src="assets/img/wcm-1.png" alt="">
+                    <h3 class="mb-4 text-xl font-semibold text-gray-500">Profesional</h3>
+                    <p class="text-md text-gray-400">Dapat bekerja secara profesional seseuai aturan serta kerja sama
+                        dengan berbagai tim kerja</p>
+                </div>
+                <div class="grid grid-row-3 px-10 py-16 bg-white shadow-sm text-center rounded-3xl hover:shadow-2xl">
+                    <img class="mx-auto align-middle mt-4 mb-8" src="assets/img/wcm-2.png" alt="">
+                    <h3 class="mb-4 text-xl font-semibold text-gray-500">Kolaboratif</h3>
+                    <p class="text-md text-gray-400">Dapat mengelola projek bersama tim dan juga memberikan pendapat
+                        terhadap projek</p>
+                </div>
+                <div class=" grid grid-row-3 px-10 py-16 bg-white shadow-sm text-center rounded-3xl hover:shadow-2xl">
+                    <img class="mx-auto align-middle mt-4 mb-8" src="assets/img/wcm-3.png" alt="">
+                    <h3 class="mb-4 text-xl font-semibold text-gray-500">Kreatif & Inovatif</h3>
+                    <p class="text-md text-gray-400">Dapat menuangkan ide yang kreatif dan inovatif dalam mendesain UI
+                        agar menarik dan dipahami user</p>
+                </div>
+            </div>
+            <div class="mt-16 sm:mt-0">
+                <a href="about.html"
+                    class="btn-outline-pink block border-2 mb-4 mt-16 sm:mt-12 py-4 px-8 mx-auto text-center text-lg font-semibold rounded-2xl shadow-md sm:block sm:w-60">
+                    <div class="flex justify-center">
+                        <i class="material-icons-outlined mr-2 pt-0.5">
+                            person_outline
+                        </i>
+                        <span>Tentang Saya</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Wcm -->
+
+    <!-- Section Testimonials -->
+    <section class="bg-white relative py-16" id=" testimonials">
+        <!-- Image Pattern -->
+        <img class="absolute -top-4 w-screen" src="assets/img/pattern/work-pattern.png" class="" alt="">
+        <div class="mb-10">
+            <h1
+                class="align-middle font-extrabold text-2xl text-color-2 text-center leading-normal lg:text-5xl lg:leading-normal">
+                Testimoni</h1>
+        </div>
+        <div class="relative overflow-x-scroll px-8 overflow-y-hidden slider-container h-80" data-item="slider-full">
+            <div class="slider-all-items cursor-pointer">
+                <div
+                    class="relative block bg-white rounded-2xl shadow-lg px-8 py-8 w-screen w-testimonials mr-8 sm:mx-4 sm:mr-0 whitespace-normal slider-item">
+                    <div class="mb-8">
+                        <img class="inline-block my-auto mr-4" src="assets/img/testimonials-1.png" alt="">
+                        <div class="inline-block align-middle">
+                            <h5 class="text-color-blue font-semibold">Sarah William</h5>
+                            <p class="text-gray-400">Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor
+                        sit
+                        amet, consectetur
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div
+                    class="relative block bg-white rounded-2xl shadow-lg px-8 py-8 w-screen w-testimonials mr-8 sm:mx-4 sm:mr-0 whitespace-normal slider-item">
+                    <div class="mb-8">
+                        <img class="inline-block my-auto mr-4" src="assets/img/testimonials-1.png" alt="">
+                        <div class="inline-block align-middle">
+                            <h5 class="text-color-blue font-semibold">Sarah William</h5>
+                            <p class="text-gray-400">Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor
+                        sit
+                        amet, consectetur
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div
+                    class="relative block bg-white rounded-2xl shadow-lg px-8 py-8 w-screen w-testimonials mr-8 sm:mx-4 sm:mr-0 whitespace-normal slider-item">
+                    <div class="mb-8">
+                        <img class="inline-block my-auto mr-4" src="assets/img/testimonials-1.png" alt="">
+                        <div class="inline-block align-middle">
+                            <h5 class="text-color-blue font-semibold">Sarah William</h5>
+                            <p class="text-gray-400">Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor
+                        sit
+                        amet, consectetur
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div
+                    class="relative block bg-white rounded-2xl shadow-lg px-8 py-8 w-screen w-testimonials mr-8 sm:mx-4 sm:mr-0 whitespace-normal slider-item">
+                    <div class="mb-8">
+                        <img class="inline-block my-auto mr-4" src="assets/img/testimonials-1.png" alt="">
+                        <div class="inline-block align-middle">
+                            <h5 class="text-color-blue font-semibold">Sarah William</h5>
+                            <p class="text-gray-400">Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor
+                        sit
+                        amet, consectetur
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div
+                    class="relative block bg-white rounded-2xl shadow-lg px-8 py-8 w-screen w-testimonials mr-8 sm:mx-4 sm:mr-0 whitespace-normal slider-item">
+                    <div class="mb-8">
+                        <img class="inline-block my-auto mr-4" src="assets/img/testimonials-1.png" alt="">
+                        <div class="inline-block align-middle">
+                            <h5 class="text-color-blue font-semibold">Sarah William</h5>
+                            <p class="text-gray-400">Product Manager</p>
+                        </div>
+                    </div>
+                    <p class="leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor
+                        sit
+                        amet, consectetur
+                        adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Testimonials -->
 
     <!-- Footer -->
     <section id="footer1" class="relative brand-color-4 py-8">
@@ -283,7 +436,98 @@
         </div>
     </section>
     <!-- End Footer -->
+
+    <!-- Modal -->
+    <div class="bg-black top-0 left-0 right-0 opacity-40 fixed w-screen h-screen z-40 hidden" id="overlayContact">
+
+    </div>
+    <div class="mx-auto fixed top-0 left-0 right-0 mt-12 px-8 py-8 rounded-xl w-full lg:w-1/3 shadow-2xl bg-white z-50 hidden"
+        id="modalContact">
+        <img src="assets/img/pattern/work-pattern.png" class="absolute top-0 left-0" alt="">
+        <div class="relative flex justify-between items-center mb-8">
+            <div>
+                <h3 class="text-color-blue text-2xl font-bold">Kontak Saya</h3>
+                <p class="text-sm text-gray-400">Hubungi saya melalui email</p>
+            </div>
+            <button id="btnCloseModalContact" type="button"
+                class="rounded-full border-1 border-pink-500 text-pink-500 w-8 h-8 hover:bg-pink-500 hover:text-white">
+                &times;
+            </button>
+        </div>
+
+        <form name="contact-form-portfolio">
+            <div class="my-3">
+                <label for="email" class="text-sm block mb-3">Email</label>
+                <input type="email"
+                    class="text-sm rounded-md bg-gray-200 block w-full h-8 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    id="email" name="email">
+            </div>
+            <div class="my-3">
+                <label for="name" class="text-sm block mb-3">Nama</label>
+                <input type="text"
+                    class="text-sm rounded-md bg-gray-200 block w-full h-8 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    id="name" name="name">
+            </div>
+            <div class="my-3">
+                <label for="message" class="text-sm block mb-3">Pesan</label>
+                <textarea
+                    class="text-sm rounded-md bg-gray-200 block w-full focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    id="message" rows="10" name="message"></textarea>
+            </div>
+            <button type="submit"
+                class="btn-submit btn-gradient-1 block mt-4 py-2 px-8 text-white text-center text-sm rounded-lg shadow-md w-full sm:w-40 ml-auto mr-0">
+                <div class="flex justify-center">
+                    <i class="material-icons-outlined text-sm mr-2">
+                        send
+                    </i>
+                    <span> Kirim</span>
+                </div>
+            </button>
+            <button type="submit"
+                class="btn-loading btn-gradient-1 mt-4 py-2 px-8 text-white text-center text-sm rounded-lg shadow-md w-full sm:w-40 ml-auto mr-0 hidden"
+                disabled>
+                <div class="flex justify-center">
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                        </circle>
+                        <path class="opacity-75" fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                        </path>
+                    </svg>
+                    <span> Loading</span>
+                </div>
+            </button>
+        </form>
+    </div>
+    <!-- End Modal -->
 </body>
+<!-- Script form -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwSKIh0t8AvLlFp9VEda3wvFQR0Ybji_kY1UMbcTRhUw7sj8NDEKDS1zitLZPyP-YmK/exec'
+    const form = document.forms['contact-form-portfolio'];
+
+    const btnSubmit = document.querySelector('.btn-submit');
+    const btnLoading = document.querySelector('.btn-loading');
+
+    form.addEventListener('submit', e => {
+        btnLoading.classList.toggle('hidden');
+        btnSubmit.classList.toggle('hidden');
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                btnLoading.classList.toggle('hidden');
+                btnSubmit.classList.toggle('hidden');
+                $("#overlayContact").toggleClass("hidden");
+                $("#modalContact").fadeOut(300).toggleClass("hidden");
+
+                console.log('Success!', response);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+    });
+</script>
+
 <!-- Jquery -->
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>

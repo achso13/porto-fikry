@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Portfolio - Fikry Ardi Fatma</title>
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="bg-black top-0 left-0 right-0 opacity-40 fixed w-screen h-screen z-40 hidden" id="overlayContact">
+
+    </div>
+    <div class="mx-auto fixed top-0 left-0 right-0 mt-12 px-8 py-8 rounded-xl w-full lg:w-1/3 shadow-2xl bg-white z-50 hidden"
+        id="modalContact">
+        <img src="assets/img/pattern/work-pattern.png" class="absolute top-0 left-0" alt="">
+        <div class="relative flex justify-between items-center mb-8">
+            <div>
+                <h3 class="text-color-blue text-2xl font-bold">Kontak Saya</h3>
+                <p class="text-sm text-gray-400">Hubungi saya melalui email</p>
+            </div>
+            <button id="btnCloseModalContact" type="button"
+                class="rounded-full border-1 border-pink-500 text-pink-500 w-8 h-8 hover:bg-pink-500 hover:text-white">
+                &times;
+            </button>
+        </div>
+
+        <form name="contact-form-portfolio">
+            <div class="my-3">
+                <label for="email" class="text-sm block mb-3">Email</label>
+                <input type="email"
+                    class="text-sm rounded-md bg-gray-200 block w-full h-8 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    id="email" name="email">
+            </div>
+            <div class="my-3">
+                <label for="name" class="text-sm block mb-3">Nama</label>
+                <input type="text"
+                    class="text-sm rounded-md bg-gray-200 block w-full h-8 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    id="name" name="name">
+            </div>
+            <div class="my-3">
+                <label for="message" class="text-sm block mb-3">Pesan</label>
+                <textarea
+                    class="text-sm rounded-md bg-gray-200 block w-full focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    id="message" rows="10" name="message"></textarea>
+            </div>
+            <button type="submit"
+                class="btn-submit btn-gradient-1 block mt-4 py-2 px-8 text-white text-center text-sm rounded-lg shadow-md w-full sm:w-40 ml-auto mr-0">
+                <div class="flex justify-center">
+                    <i class="material-icons-outlined text-sm mr-2">
+                        send
+                    </i>
+                    <span> Kirim</span>
+                </div>
+            </button>
+            <button type="submit"
+                class="btn-loading btn-gradient-1 mt-4 py-2 px-8 text-white text-center text-sm rounded-lg shadow-md w-full sm:w-40 ml-auto mr-0 hidden"
+                disabled>
+                <div class="flex justify-center">
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                        </circle>
+                        <path class="opacity-75" fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                        </path>
+                    </svg>
+                    <span> Loading</span>
+                </div>
+            </button>
+        </form>
+    </div>
+    <!-- End Modal -->
+
+</body>
+<!-- Typed Js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/dfe13ba546.js" crossorigin="anonymous"></script>
+
+<!-- Custom Javascript -->
+<script src="assets/js/script.js"></script>
+
+</html>

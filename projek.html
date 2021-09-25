@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Portfolio - Fikry Ardi Fatma</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="sticky top-0 bg-color-4 z-50 transition-all" id="nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="flex justify-between items-center py-6 md:justify-between md:space-x-10">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="#">
+                        <img class="h-10 w-auto sm:h-12" src="assets/img/nav-icon.png" alt="">
+                    </a>
+                </div>
+                <div class="-mr-2 -my-2 md:hidden" id="burger-menu">
+                    <button type="button"
+                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                        aria-expanded="false">
+                        <span class="sr-only">Open menu</span>
+                        <!-- Heroicon name: outline/menu -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="hidden md:flex md:space-x-16 ">
+                    <a href="index.html" class="text-lg font-medium text-color-blue hover:text-blue-500">
+                        Home
+                    </a>
+                    <a href="projek.html" class="text-lg font-medium text-color-blue hover:text-blue-500">
+                        Projek
+                    </a>
+                    <a href="about.html" class="text-lg font-medium text-color-blue hover:text-blue-500">
+                        About
+                    </a>
+                    <a href="#contact" class="text-lg font-medium text-color-blue hover:text-blue-500">
+                        Contact me
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden md:hidden"
+            id="navbar-hidden-menu">
+            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+                <div class="pt-5 pb-6 px-5">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <img class="h-10 w-auto" src="assets/img/nav-icon.png" alt="Workflow">
+                        </div>
+                        <div class="-mr-2" id="close-button">
+                            <button type="button"
+                                class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                <span class="sr-only">Close menu</span>
+                                <!-- Heroicon name: outline/x -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <nav class="grid gap-y-8">
+                            <a href="index.html" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
+                                    Home
+                                </span>
+                            </a>
+
+                            <a href="projek.html" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
+                                    Project
+                                </span>
+                            </a>
+
+                            <a href="about.html" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
+                                    About
+                                </span>
+                            </a>
+
+                            <a href="#contact" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                                <span class="ml-3 text-base font-medium text-color-blue hover:text-blue-500">
+                                    Contact Me
+                                </span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Section CTA -->
+    <section class="relative pt-16 pb-4" id="cta">
+        <img class="absolute top-0 w-screen" src="assets/img/pattern/work-pattern.png" class="" alt="">
+        <div
+            class="relative max-w-7xl mx-auto align-middle px-8 py-8 bg-white rounded-3xl grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-2 ">
+            <div>
+                <h3 class="text-color-blue font-semi bold text-lg">Studi Kasus</h3>
+                <h1
+                    class="text-color-blue font-bold text-3xl text-color-2 leading-normal lg:text-5xl lg:leading-normal">
+                    StudentHunt</h1>
+            </div>
+            <div class="sm:flex sm:flex-col sm:items-end sm:justify-center">
+                <a href=""
+                    class="btn-gradient-1 block my-4 py-4 px-8 text-white text-center text-lg font-semibold rounded-2xl shadow-md  sm:block sm:w-60">
+                    <div class="flex justify-center">
+                        <i class="material-icons-outlined mr-2 pt-0.5">
+                            file_download
+                        </i>
+                        <span>Download PDF</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Section CTA -->
+
+    <!-- Section Parallax  -->
+    <section
+        class="relative h-60 md:h-96 w-screen my-20 border-t-2 border-b-2 border-gray-300 bg-no-repeat bg-center bg-contain md:bg-cover bg-fixed"
+        style="background-image: url(assets/img/project/parallax-1.png)">
+    </section>
+    <!-- End Section Parallax -->
+
+    <!-- Section Content -->
+    <section class="relative py-8 md:mt-20">
+        <div class="max-w-7xl mx-auto px-8">
+            <!-- Text -->
+            <div class="mb-16 hideme">
+                <h3 class="text-color-blue text-2xl md:text-4xl font-semibold my-8 slideSlow">Gambaran</h3>
+                <p class="text-gray-400 text-md md:text-xl leading-relaxed">Dalam mengerjakan task ini saya terinspirasi
+                    oleh
+                    website pencarian
+                    magang
+                    untuk mahasiswa yaitu
+                    studentjob.com. Dikarenakan website tersebut sangat cocok bagi mahasiswa yang ingin mencari
+                    pengalaman magang, volunteer, bahkan beasiswa.</p>
+            </div>
+            <!-- End Text -->
+            <!-- Text + List -->
+            <div class="mb-16 hideme">
+                <h3 class="text-color-blue text-2xl md:text-4xl font-semibold my-8">Permasalahan</h3>
+                <p class="text-gray-400 text-md md:text-xl leading-relaxed">Namun pada webiste studentjob.com, saya
+                    pribadi
+                    menemukan kekurangan dalam segi visual design website seperti berikut;
+                </p>
+                <ul class="text-gray-400 text-md md:text-xl leading-relaxed list-disc list-outside pl-6">
+                    <li class="list-item">Tampilan website yang kurang menggambarkan semangat kerja</li>
+                    <li class="list-item">Navigation list yang terkesan terlihat padat</li>
+                    <li class="list-item">Kurang memiliki visual hierarki yang baik</li>
+                    <li class="list-item">Susunan tampilan yang kurang sesuai</li>
+                </ul>
+            </div>
+            <!-- End Text + List -->
+            <!-- Text + List -->
+            <div class="mb-16 hideme">
+                <h3 class="text-color-blue text-2xl md:text-4xl font-semibold my-8">Solusi</h3>
+                <p class="text-gray-400 text-md md:text-xl leading-relaxed">Selaku UI/UX Enthusiast saya memberikan
+                    solusi menarik
+                    pada website tersebut, namun dengan cara membuat website pencarian magang versi saya sendiri dengan
+                    mengedepankan hal-hal yang saya anggap penting seperti hal berikut;
+
+                </p>
+                <ul class="text-gray-400 text-md md:text-xl leading-relaxed list-disc list-outside pl-6">
+                    <li class=" list-item">Membuat tampilan webiste yang user friendly dan lebih fresh, sehingga user
+                        dapat terpuaskan
+                        dengan
+                        visual design</li>
+                    <li class="list-item">Menambahkan opsi lokasi magang terdekat, agar user tidak perlu mendapat
+                        lowongan yang jauh</li>
+                    <li class="list-item">Menyederhanakan navigation yang ada</li>
+                    <li class="list-item">Menambahkan testimoni untuk meyakinkan user</li>
+                    <li class="list-item">Membuka jasa layanan review CV dan protofolio</li>
+                </ul>
+            </div>
+            <!-- End Text + List -->
+            <!-- Text -->
+            <div class="mb-16 hideme">
+                <h3 class="text-color-blue text-2xl md:text-4xl font-semibold my-8">Target Pengguna</h3>
+                <p class="text-gray-400 text-md md:text-xl leading-relaxed">Dalam mengerjakan task ini saya terinspirasi
+                    oleh
+                    Website ini memiliki target pengguna dari kalangan mahasiswa yang ingin mencari internship dan
+                    volunteer atau siswa SMA yang ingin mencari scholarship, bahkan mahasiswa fresh graduete yang ingin
+                    mengembangkan pengalamannya atau di review CV nya.</p>
+            </div>
+            <!-- End Text -->
+            <!-- Text + Gambar -->
+            <div class="mb-16">
+                <h3 class="text-color-blue text-2xl md:text-4xl font-semibold my-8">Sitemap</h3>
+                <img class="w-full h-auto my-8" src="assets/img/project/sitemap-1.png" alt="">
+            </div>
+            <!-- End Text + Gambar -->
+            <!-- Text + Gambar -->
+            <div class="mb-16">
+                <h3 class="text-color-blue text-2xl md:text-4xl font-semibold my-8">Sitemap</h3>
+                <img class="w-full h-auto my-8" src="assets/img/project/sitemap-2.png" alt="">
+                <img class="w-full h-auto my-8" src="assets/img/project/sitemap-3.png" alt="">
+            </div>
+            <!-- End Text + Gambar -->
+            <!-- Text + Gambar + Caption-->
+            <div class="mb-16">
+                <h3 class="text-color-blue text-2xl md:text-4xl font-semibold my-8">Style Guide</h3>
+                <p class="text-gray-400 text-md md:text-xl leading-relaxed">Rapih, Profesional, Modern</p>
+                <img class="w-full h-auto my-8" src="assets/img/project/styleguide-1.png" alt="">
+            </div>
+            <!-- End Text + Gambar + Caption-->
+        </div>
+    </section>
+    <!-- End Section Content -->
+
+    <!-- Section Parallax  -->
+    <section
+        class="relative h-60 md:h-96 w-screen my-20 border-t-2 border-b-2 border-gray-300 bg-no-repeat bg-center bg-contain lg:bg-cover bg-fixed"
+        style="background-image: url(assets/img/project/parallax-2.png)">
+    </section>
+    <!-- End Section Parallax -->
+
+    <!-- Section Content -->
+    <section class="relative py-8 md:mt-20">
+        <div class="max-w-7xl mx-auto px-8">
+            <!-- Text -->
+            <div class="mb-16 hideme">
+                <h3 class="text-color-blue text-2xl md:text-4xl font-semibold my-8">StudentHunt</h3>
+                <p class="text-gray-400 text-md md:text-xl leading-relaxed">StudentHunt ialah aplikasi berbasis website
+                    yang
+                    bertujuan untuk para mahasiswa, siswa, maupun fresh graduate dalam mencari pengalaman serta wawasan
+                    di dunia profesional kerja. Serta website ini juga memberikan informasi atau pendaftaran volunteer
+                    maupun beasiswa.</p>
+            </div>
+            <!-- End Text -->
+            <!-- Text + Gambar + Caption-->
+            <div class="mb-16">
+                <h3 class="text-color-blue text-4xl font-semibold my-8">Logo</h3>
+                <p class="text-gray-400 text-xl leading-relaxed">Logo nya sendiri terinspirasi dari namanya sendiri yang
+                    mengandung huruf depan ‘S’. Maka dari itu saya membuat logo tersebut seperti huruf ‘S’ yang
+                    samar-samar. Dan logo dapat menyesuaikan sesuai kebutuhan visual design
+                </p>
+                <img class="w-full h-auto my-8" src="assets/img/project/logo-1.png" alt="">
+            </div>
+            <!-- End Text + Gambar + Caption-->
+            <!-- Text + Gambar + Caption-->
+            <div class="mb-16">
+                <h3 class="text-color-blue text-4xl font-semibold my-8">Mockups</h3>
+                <p class="text-gray-400 text-xl leading-relaxed">
+                    1. Menu Utama
+                </p>
+                <img class="w-full h-auto my-8 md:px-24" src="assets/img/project/mockup-1.png" alt="">
+                <p class="text-gray-400 text-xl leading-relaxed">
+                    2. List Internship
+                </p>
+                <img class="w-full h-auto my-8 md:px-24" src="assets/img/project/mockup-2.png" alt="">
+                <p class="text-gray-400 text-xl leading-relaxed">
+                    3. List Detail Internship
+                </p>
+                <img class="w-full h-auto my-8 md:px-24" src="assets/img/project/mockup-3.png" alt="">
+            </div>
+            <!-- End Text + Gambar + Caption-->
+        </div>
+    </section>
+    <!-- End Section Content -->
+
+    <!-- Section Projek Lainnya -->
+    <section id="other" class="relative py-8 md:mt-20">
+        <div class="max-w-7xl mx-auto px-8 py-8">
+            <h1
+                class="text-color-blue font-bold text-3xl text-color-2 leading-normal lg:text-5xl lg:leading-normal mb-12">
+                Projek Lainnya</h1>
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-12">
+                <div class="col-span-2 bg-white shadow-xl rounded-3xl">
+                    <img class="w-full h-auto" src="assets/img/project/card-1.png" alt="">
+                    <div class="px-6 mt-8">
+                        <h3 class="text-4xl font-medium">JDIH</h3>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 sm:my-4 mb-4">
+                            <a href="#"
+                                class="btn-gradient-1 border-2 my-4 py-2.5 text-white text-center text-md sm:text-lg font-light rounded-lg shadow-sm mx-auto block w-52 sm:block sm:w-56 ">
+                                <div class="flex justify-center">
+                                    <i class="material-icons-outlined mr-4 sm:pt-0.5">
+                                        search
+                                    </i>
+                                    <span class="font-medium">Lihat Studi Kasus</span>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="my-4 py-2.5 text-center text-md sm:text-lg font-light rounded-lg block w-52 mx-auto sm:block sm:w-56 ">
+                                <div class="flex justify-center text-gray-500 hover:text-gray-700">
+                                    <i class="material-icons-outlined mr-4 sm:pt-0.5  ">
+                                        link
+                                    </i>
+                                    <span class="font-medium">Lihat Detail</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2 bg-white shadow-xl rounded-3xl">
+                    <img class="w-full h-auto" src="assets/img/project/card-2.png" alt="">
+                    <div class="px-6 mt-8">
+                        <h3 class="text-4xl font-medium">Jatra</h3>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 sm:my-4 mb-4">
+                            <a href="#"
+                                class="btn-gradient-3 border-2 my-4 py-2.5 text-white text-center text-md sm:text-lg font-light rounded-lg shadow-sm mx-auto block w-52 sm:block sm:w-56 ">
+                                <div class="flex justify-center">
+                                    <i class="material-icons-outlined mr-4 sm:pt-0.5">
+                                        search
+                                    </i>
+                                    <span class="font-medium">Lihat Studi Kasus</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Project Lainnya -->
+    <!-- Section Contact -->
+    <section id="contact" class="relative bg-white py-8 md:mt-20">
+        <img class="absolute -top-24" src="assets/img/pattern/circle-pattern.png" class="" alt="">
+        <div class="max-w-7xl mx-auto px-8 py-8 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-2">
+            <h1 class="text-color-blue font-bold text-3xl text-color-2 leading-normal lg:text-5xl lg:leading-normal">
+                Tertarik bekerja sama dengan saya?</h1>
+            <div class="sm:flex sm:flex-col sm:items-end sm:justify-center">
+                <button id="btnModalContact"
+                    class="btn-pink my-4 py-4 px-8 text-white text-center text-lg font-semibold rounded-2xl shadow-md w-full sm:block sm:w-60">
+                    <div class="flex justify-center">
+                        <i class="material-icons-outlined mr-2 pt-0.5">
+                            email
+                        </i>
+                        <span> Kontak Saya</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Contact -->
+
+    <!-- Footer -->
+    <section id="footer1" class="relative brand-color-4 py-8">
+        <div class="max-w-7xl mx-auto px-8 py-8 text-center">
+            <h1 class="text-white font-semibold text-3xl leading-normal lg:text-5xl lg:leading-normal my-4">
+                Lets Connect</h1>
+            <p class="text-gray-300 text-xl">Untuk keperluan bisnis dan kolaborasi, silahkan email
+                <span class="text-white font-semibold">fikryard@gmail.com</span>
+            </p>
+            <div class="flex justify-center mt-8 text-white">
+                <a href="https://www.instagram.com/fikryard.ui/" class="mx-8 hover:text-blue-300"><i
+                        class="fab fa-2x fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/fikry-ardi-193b5617b/" class="mx-8 hover:text-blue-300"><i
+                        class="fab fa-2x fa-linkedin-in"></i></a>
+                <a href="" class="mx-8 hover:text-blue-300"><i class="fab fa-2x fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer2" class="relative py-4 bg-white">
+        <div class="max-w-7xl mx-auto px-8 py-8 text-center">
+            <p class="text-gray-600 text-xl">2021 Code Program by <a href="achso13.github.io"
+                    class="hover:text-blue-800 font-medium">Achmad Solehuddin</a>
+            </p>
+        </div>
+    </section>
+    <!-- End Footer -->
+
+    <!-- Modal -->
+    <div class="bg-black top-0 left-0 right-0 opacity-40 fixed w-screen h-screen z-40 hidden" id="overlayContact">
+
+    </div>
+    <div class="mx-auto fixed top-0 left-0 right-0 mt-12 px-8 py-8 rounded-xl w-full lg:w-1/3 shadow-2xl bg-white z-50 hidden"
+        id="modalContact">
+        <img src="assets/img/pattern/work-pattern.png" class="absolute top-0 left-0" alt="">
+        <div class="relative flex justify-between items-center mb-8">
+            <div>
+                <h3 class="text-color-blue text-2xl font-bold">Kontak Saya</h3>
+                <p class="text-sm text-gray-400">Hubungi saya melalui email</p>
+            </div>
+            <button id="btnCloseModalContact" type="button"
+                class="rounded-full border-1 border-pink-500 text-pink-500 w-8 h-8 hover:bg-pink-500 hover:text-white">
+                &times;
+            </button>
+        </div>
+
+        <form name="contact-form-portfolio">
+            <div class="my-3">
+                <label for="email" class="text-sm block mb-3">Email</label>
+                <input type="email"
+                    class="text-sm rounded-md bg-gray-200 block w-full h-8 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    id="email" name="email">
+            </div>
+            <div class="my-3">
+                <label for="name" class="text-sm block mb-3">Nama</label>
+                <input type="text"
+                    class="text-sm rounded-md bg-gray-200 block w-full h-8 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    id="name" name="name">
+            </div>
+            <div class="my-3">
+                <label for="message" class="text-sm block mb-3">Pesan</label>
+                <textarea
+                    class="text-sm rounded-md bg-gray-200 block w-full focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                    id="message" rows="10" name="message"></textarea>
+            </div>
+            <button type="submit"
+                class="btn-submit btn-gradient-1 block mt-4 py-2 px-8 text-white text-center text-sm rounded-lg shadow-md w-full sm:w-40 ml-auto mr-0">
+                <div class="flex justify-center">
+                    <i class="material-icons-outlined text-sm mr-2">
+                        send
+                    </i>
+                    <span> Kirim</span>
+                </div>
+            </button>
+            <button type="submit"
+                class="btn-loading btn-gradient-1 mt-4 py-2 px-8 text-white text-center text-sm rounded-lg shadow-md w-full sm:w-40 ml-auto mr-0 hidden"
+                disabled>
+                <div class="flex justify-center">
+                    <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg"
+                        fill="none" viewBox="0 0 24 24">
+                        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4">
+                        </circle>
+                        <path class="opacity-75" fill="currentColor"
+                            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                        </path>
+                    </svg>
+                    <span> Loading</span>
+                </div>
+            </button>
+        </form>
+    </div>
+    <!-- End Modal -->
+</body>
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/dfe13ba546.js" crossorigin="anonymous"></script>
+
+<!-- Custom Javascript -->
+<script src="assets/js/script.js"></script>
+
+</html>
