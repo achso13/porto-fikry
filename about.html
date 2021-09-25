@@ -333,6 +333,35 @@
     </div>
     <!-- End Modal -->
 </body>
+
+<!-- Script form -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwSKIh0t8AvLlFp9VEda3wvFQR0Ybji_kY1UMbcTRhUw7sj8NDEKDS1zitLZPyP-YmK/exec'
+    const form = document.forms['contact-form-portfolio'];
+
+    const btnSubmit = document.querySelector('.btn-submit');
+    const btnLoading = document.querySelector('.btn-loading');
+
+    form.addEventListener('submit', e => {
+        btnLoading.classList.toggle('hidden');
+        btnLoading.classList.toggle('block');
+        btnSubmit.classList.toggle('hidden');
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                btnLoading.classList.toggle('hidden');
+                btnLoading.classList.toggle('block');
+                btnSubmit.classList.toggle('hidden');
+                $(".overlayContact").toggleClass("hidden");
+                $(".modalContact").fadeOut(300).toggleClass("hidden");
+
+                console.log('Success!', response);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+    });
+</script>
+
 <!-- Typed Js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
 
