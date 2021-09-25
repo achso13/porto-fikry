@@ -1,16 +1,16 @@
 $(document).ready(function () {
     // Show Modal
-    $("#btnModalContact").click(() => {
-        $("#overlayContact").toggleClass("hidden");
-        $("#modalContact").fadeIn(300).toggleClass("hidden");
+    $(".btnModalContact").click(() => {
+        $(".overlayContact").toggleClass("hidden");
+        $(".modalContact").fadeIn(300).toggleClass("hidden");
     });
-    $("#btnCloseModalContact").click(() => {
-        $("#overlayContact").toggleClass("hidden");
-        $("#modalContact").fadeOut(300).toggleClass("hidden");
+    $(".btnCloseModalContact").click(() => {
+        $(".overlayContact").toggleClass("hidden");
+        $(".modalContact").fadeOut(300).toggleClass("hidden");
     });
-    $("#overlayContact").click(() => {
-        $("#overlayContact").toggleClass("hidden");
-        $("#modalContact").fadeOut(300).toggleClass("hidden");
+    $(".overlayContact").click(() => {
+        $(".overlayContact").toggleClass("hidden");
+        $(".modalContact").fadeOut(300).toggleClass("hidden");
     });
 
     // Responsive navbar
